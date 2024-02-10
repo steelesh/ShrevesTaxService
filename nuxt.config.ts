@@ -25,6 +25,15 @@ export default defineNuxtConfig({
       Inter: [100, 200, 300, 400, 500, 600, 700]
     }
   },
+  app: {
+    head: {
+      charset: 'utf-8',
+      htmlAttrs: { lang: 'en-US' },
+      viewport:
+        'width=device-width, initial-scale=0, maximum-scale=1, user-scalable=no',
+      meta: [{ name: 'robots', content: 'noindex, nofollow' }]
+    }
+  },
   fontMetrics: {
     fonts: ['Inter']
   }
