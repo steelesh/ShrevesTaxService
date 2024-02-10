@@ -1,0 +1,21 @@
+html {
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+.snap-section {
+  min-height: 95vh;
+  scroll-margin-top: 5rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+::selection {
+  background-color: rgba(210, 210, 210, 0.5) !important;
+}
+
+.dark ::selection {
+  background-color: rgba(87, 87, 87, 0.35) !important;
+}
