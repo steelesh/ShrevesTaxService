@@ -9,11 +9,10 @@
       <ULandingGrid>
         <ULandingTestimonial
           class="col-span-6 row-span-2"
-          icon="i-simple-icons-google"
-          quote="Wendy is awesome at her job. She is very knowledgeable and professional. I would recommend her to anyone."
+          quote="Testimonial number 1"
           :author="{
-            name: 'Rose Roberson',
-            description: 'CEO at Google',
+            name: 'Jane Doe',
+            description: 'CEO',
             to: 'https://google.com',
             target: '_blank',
             avatar: { src: 'https://i.pravatar.cc/120?img=1' }
@@ -22,11 +21,10 @@
         />
         <ULandingTestimonial
           class="col-span-6 row-span-4"
-          icon="i-simple-icons-google"
-          quote="Wendy is awesome at her job. She is very knowledgeable and professional. I would recommend her to anyone."
+          quote="Testimonial number 2"
           :author="{
-            name: 'Rose Roberson',
-            description: 'CEO at Google',
+            name: 'Jane Doe',
+            description: 'CEO',
             to: 'https://google.com',
             target: '_blank',
             avatar: { src: 'https://i.pravatar.cc/120?img=1' }
@@ -35,11 +33,10 @@
         />
         <ULandingTestimonial
           class="col-span-6 row-span-4"
-          icon="i-simple-icons-google"
-          quote="Wendy is awesome at her job. She is very knowledgeable and professional. I would recommend her to anyone."
+          quote="Testimonial number 3"
           :author="{
-            name: 'Rose Roberson',
-            description: 'CEO at Google',
+            name: 'Jane Doe',
+            description: 'CEO',
             to: 'https://google.com',
             target: '_blank',
             avatar: { src: 'https://i.pravatar.cc/120?img=1' }
@@ -48,11 +45,10 @@
         />
         <ULandingTestimonial
           class="col-span-6 row-span-2"
-          icon="i-simple-icons-google"
-          quote="Wendy is awesome at her job. She is very knowledgeable and professional. I would recommend her to anyone."
+          quote="Testimonial number 4"
           :author="{
-            name: 'Rose Roberson',
-            description: 'CEO at Google',
+            name: 'Jane Doe',
+            description: 'CEO',
             to: 'https://google.com',
             target: '_blank',
             avatar: { src: 'https://i.pravatar.cc/120?img=1' }

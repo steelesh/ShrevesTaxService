@@ -18,6 +18,7 @@
     "@iconify-json/simple-icons": "^1.1.90",
     "@nuxt/ui-pro": "^0.7.5",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@vercel/speed-insights": "^1.0.9",
     "nuxt": "^3.10.1",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
