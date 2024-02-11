@@ -6,7 +6,9 @@ export default defineNuxtConfig({
     ['@nuxtjs/eslint-module', { lintOnStart: false }],
     ['@nuxtjs/stylelint-module', { lintOnStart: false }],
     '@nuxtjs/fontaine',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@vueuse/motion/nuxt',
+    '@vueuse/nuxt'
   ],
   ui: {
     icons: ['heroicons', 'simple-icons']
