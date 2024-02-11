@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="absolute inset-0 -z-10 h-full w-full stroke-gray-300 opacity-95 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)] dark:opacity-15"
+    class="fixed inset-0 -z-10 h-full w-full stroke-gray-300 opacity-95 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)] dark:opacity-15"
     aria-hidden="true"
   >
     <defs>
