@@ -1,5 +1,5 @@
 <template>
-  <div class="snap-section">
+  <div class="snap-section" v-motion-fade-visible :delay="200">
     <ULandingSection
       id="about"
       align="left"

@@ -14,7 +14,12 @@ const isLight = computed({
 
 <template>
   <ClientOnly>
-    <div class="snap-section">
+    <div
+      class="snap-section"
+      v-motion
+      :initial="{ opacity: 0 }"
+      :enter="{ opacity: 1 }"
+    >
       <ULandingHero :ui="{ title: 'text-4xl' }">
         <!-- TITLE -->
         <template #title>
