@@ -1,5 +1,5 @@
 <template>
-  <div class="snap-section">
+  <div class="snap-section" v-motion-fade-visible :delay="200">
     <ULandingSection id="testimonials">
       <template #title>
         <span
@@ -9,13 +9,11 @@
       <ULandingGrid>
         <ULandingTestimonial
           class="col-span-6 row-span-2"
-          quote="Testimonial number 1"
+          quote="Wendy, thank you for 20 years of service preparing my taxes. I really appreciate you and the excellent quality of your work. I've had the peace of mind through the years that I've never had to fear the IRS from filing incorrectly. The dedication you exhibit both honestly with the IRS and your customers emphasizes what a wonderful businesswoman you are. Thank you for being my friend and trusted advocate for the IRS."
           :author="{
-            name: 'Jane Doe',
-            description: 'CEO',
-            to: 'https://google.com',
-            target: '_blank',
-            avatar: { src: 'https://i.pravatar.cc/120?img=1' }
+            name: 'Dora Maxwell',
+            target: '_blank'
+            // avatar: { src: 'https://i.pravatar.cc/120?img=1' }
           }"
           card
         />
