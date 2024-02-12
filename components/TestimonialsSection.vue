@@ -21,7 +21,7 @@
       />
       <ULandingTestimonial
         class="col-span-6 row-span-4"
-        quote="I gladly recommend Wendy's services. She has a very clean, friendly atmosphere. She puts all she has into her work, she's affordable and always completes in a timely manner. I look forward into seeing her every Year!"
+        quote="I gladly recommend Wendy's services. She has a very clean, friendly atmosphere. She puts all she has into her work, she's affordable and always completes in a timely manner. I look forward to see her each year!"
         :author="{
           name: 'Jessica Swope',
           target: '_blank'
