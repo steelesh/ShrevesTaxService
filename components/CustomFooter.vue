@@ -20,7 +20,7 @@ const links = [
 </script>
 
 <template>
-  <UFooter :links="links" class="mb-12" v-motion-fade-visible :delay="200">
+  <UFooter :links="links" class="mb-12" v-motion-fade-visible :delay="100">
     <template #left> Copyright © {{ new Date().getFullYear() }} </template>
     <template #right>
       <UButton

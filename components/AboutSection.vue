@@ -3,7 +3,7 @@
     id="about"
     class="section"
     v-motion-fade-visible
-    :delay="200"
+    :delay="100"
     align="left"
     description="Wendy Shreve is an authorized E-File Provider and a dedicated
         participant in the IRS Annual Filing Season Program. Wendy commits to

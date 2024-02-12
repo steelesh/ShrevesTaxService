@@ -51,13 +51,13 @@ const clearForm = () => {
 </script>
 
 <template>
-  <ULandingSection class="section" v-motion-fade-visible :delay="200">
+  <ULandingSection class="section" v-motion-fade-visible :delay="100">
     <UForm
       :schema="schema"
       :state="state"
       :validate-on="['submit']"
       @submit="onSubmit"
-      class="relative space-y-4 divide-gray-200 rounded-xl border-2 bg-gray-50 p-20 shadow ring-1 ring-gray-200 dark:divide-gray-800 dark:border-gray-800 dark:bg-gray-900 dark:ring-gray-500"
+      class="relative space-y-4 divide-gray-200 rounded-xl border-2 bg-gray-50 p-8 shadow ring-1 ring-gray-200 md:p-20 dark:divide-gray-800 dark:border-gray-800 dark:bg-gray-900 dark:ring-gray-500"
     >
       <h2
         class="mb-16 text-center text-3xl font-bold tracking-tight text-gray-900 sm:mb-24 sm:text-4xl lg:text-5xl dark:text-white"

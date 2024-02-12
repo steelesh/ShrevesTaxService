@@ -3,7 +3,7 @@
     id="services"
     class="section"
     v-motion-fade-visible
-    :delay="200"
+    :delay="100"
   >
     <template #title>
       <span class="text-primary">Services</span>

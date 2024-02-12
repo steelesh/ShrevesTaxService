@@ -3,7 +3,7 @@
     id="testimonials"
     class="section"
     v-motion-fade-visible
-    :delay="200"
+    :delay="100"
   >
     <template #title>
       <span>What <span class="text-primary">Our Clients</span> Are Saying</span>
