@@ -19,13 +19,11 @@
         />
         <ULandingTestimonial
           class="col-span-6 row-span-4"
-          quote="Testimonial number 2"
+          quote="I gladly recommend Wendy's services. She has a very clean, friendly atmosphere. She puts all she has into her work, she's affordable and always completes in a timely manner. I look forward into seeing her every Year!"
           :author="{
-            name: 'Jane Doe',
-            description: 'CEO',
-            to: 'https://google.com',
-            target: '_blank',
-            avatar: { src: 'https://i.pravatar.cc/120?img=1' }
+            name: 'Jessica Swope',
+            target: '_blank'
+            // avatar: { src: 'https://i.pravatar.cc/120?img=1' }
           }"
           card
         />
