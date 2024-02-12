@@ -14,52 +14,51 @@ const isLight = computed({
 
 <template>
   <ClientOnly>
-    <div
-      class="snap-section"
+    <ULandingHero
+      :ui="{ title: 'text-4xl' }"
+      class="section"
       v-motion
       :initial="{ opacity: 0 }"
       :enter="{ opacity: 1 }"
     >
-      <ULandingHero :ui="{ title: 'text-4xl' }">
-        <!-- TITLE -->
-        <template #title>
-          Expert Tax Services
-          <br />
-          <vue-typewriter-effect
-            class="text-primary text-[20px] md:text-[44px]"
-            :strings="[
-              'At Reasonable Rates',
-              'With a Personal Touch',
-              'Delivering Exceptional Results'
-            ]"
-            :cursor="'|'"
-            :loop="true"
-            :pauseFor="1650"
-            :deleteSpeed="18"
-          />
-        </template>
-        <!-- DESCRIPTION -->
-        <template #description>
-          <div class="my-20">
-            <span>
-              Since 2002, tax professional
-              <span class="text-black dark:text-white">Wendy Shreve</span> has
-              been servicing clients in <br /><b>Zanesville, OH</b>.
-            </span>
-          </div>
-        </template>
-        <!-- BUTTONS -->
-        <template #links>
-          <UButton
-            to="#about"
-            size="xl"
-            :variant="isLight ? 'solid' : 'outline'"
-            padded
-          >
-            Learn More
-          </UButton>
-        </template>
-      </ULandingHero>
-    </div>
+      <!-- TITLE -->
+      <template #title>
+        Expert Tax Services
+        <br />
+        <vue-typewriter-effect
+          class="text-primary text-[20px] md:text-[44px]"
+          :strings="[
+            'At Reasonable Rates',
+            'With a Personal Touch',
+            'Delivering Exceptional Results'
+          ]"
+          :cursor="'|'"
+          :loop="true"
+          :pauseFor="1650"
+          :deleteSpeed="18"
+        />
+      </template>
+      <!-- DESCRIPTION -->
+      <template #description>
+        <div class="my-20">
+          <span>
+            Since 2002, tax professional
+            <span class="text-black dark:text-white">Wendy Shreve</span> has
+            been servicing clients in <br /><b>Zanesville, OH</b>.
+          </span>
+        </div>
+      </template>
+      <!-- BUTTONS -->
+      <template #links>
+        <UButton
+          to="#about"
+          size="xl"
+          :variant="isLight ? 'solid' : 'outline'"
+          padded
+        >
+          Learn More
+        </UButton>
+      </template>
+    </ULandingHero>
   </ClientOnly>
 </template>
