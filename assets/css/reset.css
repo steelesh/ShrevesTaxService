@@ -1,12 +1,11 @@
 html {
-  @apply snap-y snap-mandatory md:snap-none;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
-.snap-section {
-  @apply min-h-[100vh] snap-start snap-always scroll-mt-20 md:min-h-[75vh] md:snap-none md:snap-normal md:scroll-mt-0;
+.section {
+  @apply min-h-[100vh]  md:min-h-[75vh];
 }
 
 ::selection {
