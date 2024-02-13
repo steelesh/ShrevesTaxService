@@ -125,9 +125,9 @@ const navigation = {
     { name: 'Contact', href: '/contact' }
   ],
   services: [
-    { name: 'Tax Preparation', href: '/services/preparation' },
-    { name: 'Tax Planning', href: '/services/planning' },
-    { name: 'Tax Compliance', href: '/services/compliance' }
+    { name: 'Tax Preparation', href: '/services#preparation' },
+    { name: 'Tax Planning', href: '/services#planning' },
+    { name: 'Tax Compliance', href: '/services#compliance' }
   ],
   legal: [
     { name: 'Accessibility', href: '/accessibility' },
