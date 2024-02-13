@@ -4,6 +4,12 @@
       <span class="text-primary">Services</span>
       We Offer</template
     >
+    <template #description>
+      Our services are designed to meet the needs of individuals and small
+      businesses, providing guidance and support for tax preparation, planning,
+      and compliance. Wendy ensures that each client receives personalized
+      attention and thorough assistance.
+    </template>
     <ULandingGrid>
       <ULandingCard
         class="col-span-4 row-span-2"
