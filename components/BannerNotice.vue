@@ -34,12 +34,12 @@ const dismiss = () => {
         <button
           type="button"
           @click="dismiss"
-          class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
+          class="-m-3 pb-3 pl-2 pr-2 pt-3 focus-visible:outline-offset-[-4px]"
         >
           <span class="sr-only">Dismiss</span>
           <Icon
             name="i-heroicons-x-mark"
-            class="h-5 w-5 text-white dark:text-black"
+            class="h-3 w-3 text-white md:h-5 md:w-5 dark:text-black"
             aria-hidden="true"
           />
         </button>
