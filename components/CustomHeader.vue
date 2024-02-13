@@ -15,7 +15,7 @@ const links = [
     to: '/services'
   },
   {
-    label: 'About',
+    label: 'About Us',
     to: '/about'
   }
 ];
