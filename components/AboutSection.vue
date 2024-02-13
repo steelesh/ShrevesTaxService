@@ -2,7 +2,7 @@
   <ULandingSection
     id="about"
     class="section"
-    v-motion-fade-visible
+    v-motion-fade
     :delay="100"
     align="left"
     description="Wendy Shreve is an authorized E-File Provider and a dedicated
