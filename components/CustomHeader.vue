@@ -39,14 +39,16 @@ const links = [
         <span class="font-bold">Shreve's Tax Service</span>
       </NuxtLink>
       <NuxtLink to="/" class="block md:hidden">
-        <NuxtImg
-          class="h-14"
-          :src="
-            isLight
-              ? '/images/logo/v1/inter/png/v1-logo-black-inter.png'
-              : '/images/logo/v1/inter/png/v1-logo-white-inter.png'
-          "
-        />
+        <ClientOnly>
+          <NuxtImg
+            class="h-14"
+            :src="
+              isLight
+                ? '/images/logo/v1/inter/png/v1-logo-black-inter.png'
+                : '/images/logo/v1/inter/png/v1-logo-white-inter.png'
+            "
+          />
+        </ClientOnly>
       </NuxtLink>
     </template>
     <template #right>
