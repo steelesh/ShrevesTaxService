@@ -1,4 +1,6 @@
 <template>
+  <SquarePattern />
+  <GradientPattern />
   <HeroSection />
   <AboutSection />
   <ServicesSection />

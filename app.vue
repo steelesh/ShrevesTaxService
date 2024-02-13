@@ -5,8 +5,6 @@ import { SpeedInsights } from '@vercel/speed-insights/nuxt';
 <template>
   <SpeedInsights />
   <CustomHeader />
-  <SquarePattern />
-  <GradientPattern />
   <UMain>
     <NuxtPage />
   </UMain>
