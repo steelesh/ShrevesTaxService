@@ -1,3 +1,4 @@
+import FAQSection from '../components/FAQSection.vue';
 <template>
   <SquarePattern />
   <GradientPattern />
@@ -5,4 +6,5 @@
   <AboutSection />
   <ServicesSection />
   <TestimonialsSection />
+  <FAQSection />
 </template>
