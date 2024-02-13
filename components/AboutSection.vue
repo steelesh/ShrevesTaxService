@@ -11,24 +11,17 @@
         receives friendly, professional service."
     :links="[
       {
-        label: 'View Services',
-        color: 'primary',
-        size: 'lg',
-        to: '#services',
-        icon: 'i-heroicons-folder-open'
-      },
-      {
-        label: 'Contact',
+        label: 'Read More',
         color: 'gray',
         size: 'lg',
         icon: 'i-heroicons-arrow-long-right',
         trailing: true,
-        to: '#contact'
+        to: '/about'
       }
     ]"
   >
     <template #title> About <span class="text-primary">Us</span> </template>
-    <img
+    <NuxtImg
       src="https://picsum.photos/640/360"
       class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
     />
