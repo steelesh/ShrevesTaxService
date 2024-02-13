@@ -1,10 +1,5 @@
 <template>
-  <ULandingSection
-    id="testimonials"
-    class="section"
-    v-motion-fade-visible
-    :delay="100"
-  >
+  <ULandingSection id="testimonials" class="section" v-motion-fade :delay="100">
     <template #title>
       <span>What <span class="text-primary">Our Clients</span> Are Saying</span>
     </template>
