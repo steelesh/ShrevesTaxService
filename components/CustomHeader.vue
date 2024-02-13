@@ -37,7 +37,6 @@ const links = [
       }
     }"
   >
-    <!-- LEFT -->
     <template #left>
       <NuxtLink to="/" class="hidden items-center gap-2 md:flex">
         <NuxtImg
@@ -57,11 +56,6 @@ const links = [
         />
       </NuxtLink>
     </template>
-    <!-- CENTER -->
-    <template #center>
-      <div class="hidden"></div>
-    </template>
-    <!-- RIGHT -->
     <template #right>
       <div class="flex items-center gap-4">
         <UButton
