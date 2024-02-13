@@ -12,35 +12,42 @@ const isLight = computed({
 const links = [
   {
     label: 'About',
-    to: '#about',
+    to: '/about',
     exactHash: true
   },
   {
     label: 'Services',
-    to: '#services',
+    to: '/services',
     exactHash: true
   },
   {
     label: 'Contact',
-    to: '#contact',
+    to: '/contact',
     exactHash: true
   }
 ];
 </script>
 
 <template>
-  <UHeader :links="links">
+  <UHeader
+    :links="links"
+    :ui="{
+      button: {
+        base: 'text-lg lg:hidden'
+      }
+    }"
+  >
     <!-- LEFT -->
     <template #left>
       <NuxtLink to="/" class="hidden items-center gap-2 md:flex">
-        <img
+        <NuxtImg
           class="h-12"
           src="/images/logo/misc/png/plant-group-no-bottom.png"
         />
         <span class="font-bold">Shreve's Tax Service</span>
       </NuxtLink>
       <NuxtLink to="/" class="block md:hidden">
-        <img
+        <NuxtImg
           class="h-14"
           :src="
             isLight
@@ -59,13 +66,13 @@ const links = [
       <div class="flex items-center gap-4">
         <UButton
           class="hidden lg:flex"
-          to="#contact"
+          to="/Contact"
           size="md"
           :variant="isLight ? 'solid' : 'outline'"
           >Contact</UButton
         >
-        <UColorModeButton class="flex lg:hidden" />
-        <UColorModeToggle class="hidden lg:flex" />
+        <UColorModeButton size="lg" class="flex lg:hidden" />
+        <UColorModeToggle size="lg" class="hidden lg:flex" />
       </div>
     </template>
     <!-- PANEL -->
