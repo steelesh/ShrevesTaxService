@@ -12,18 +12,11 @@ const isLight = computed({
 const links = [
   {
     label: 'Services',
-    to: '/services',
-    exactHash: true
+    to: '/services'
   },
   {
     label: 'About',
-    to: '/about',
-    exactHash: true
-  },
-  {
-    label: 'Contact',
-    to: '/contact',
-    exactHash: true
+    to: '/about'
   }
 ];
 </script>
@@ -59,7 +52,6 @@ const links = [
     <template #right>
       <div class="flex items-center gap-4">
         <UButton
-          class="hidden lg:flex"
           to="/contact"
           size="md"
           :variant="isLight ? 'solid' : 'outline'"
