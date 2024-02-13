@@ -41,16 +41,24 @@ const isLight = computed({
       <template #description>
         <div class="my-20">
           <span>
-            Since 2002, tax professional
-            <span class="text-black dark:text-white">Wendy Shreve</span> has
-            been servicing clients in <br /><b>Zanesville, OH</b>.
+            Having served the community for over 20 years, <br />Shreve's Tax
+            Service stands as the trusted tax preparation office in Zanesville.
           </span>
         </div>
+      </template>
+      <template #headline>
+        <UButton
+          color="gray"
+          label="Located in Zanesville, OH"
+          icon="i-heroicons-map-pin"
+          size="xs"
+          class="cursor-default rounded-full"
+        />
       </template>
       <!-- BUTTONS -->
       <template #links>
         <UButton
-          to="#about"
+          to="#services"
           size="xl"
           :variant="isLight ? 'solid' : 'outline'"
           padded
