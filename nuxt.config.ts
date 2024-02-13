@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@vueuse/motion/nuxt',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    "@nuxt/image"
   ],
   ui: {
     icons: ['heroicons', 'simple-icons']
