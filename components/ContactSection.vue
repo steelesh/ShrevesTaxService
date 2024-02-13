@@ -12,9 +12,6 @@ const schema = z.object({
     .string({ required_error: 'Last name is required' })
     .min(2, 'Last name must be at least 2 characters')
     .max(50, 'Last name must be no longer than 50 characters'),
-  email: z
-    .string({ required_error: 'Email is required' })
-    .email('Invalid email'),
   message: z
     .string({ required_error: 'Message is required' })
     .min(10, 'Message must be at least 10 characters')
@@ -31,7 +28,6 @@ type Schema = z.infer<typeof schema>;
 const state = reactive({
   firstName: undefined,
   lastName: undefined,
-  email: undefined,
   message: undefined,
   acceptprivacypolicy: undefined
 });
@@ -44,14 +40,13 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 const clearForm = () => {
   state.firstName = undefined;
   state.lastName = undefined;
-  state.email = undefined;
   state.message = undefined;
   state.acceptprivacypolicy = undefined;
 };
 </script>
 
 <template>
-  <ULandingSection class="section" v-motion-fade-visible :delay="100">
+  <ULandingSection class="section" v-motion-fade :delay="100">
     <UForm
       :schema="schema"
       :state="state"
@@ -84,9 +79,6 @@ const clearForm = () => {
           <UInput size="lg" v-model="state.lastName" />
         </UFormGroup>
       </div>
-      <UFormGroup required label="Email" name="email">
-        <UInput size="lg" v-model="state.email" />
-      </UFormGroup>
       <UFormGroup required label="Message" name="message">
         <UTextarea
           autoresize
