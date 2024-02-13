@@ -6,7 +6,6 @@ definePageMeta({
 
 <template>
   <HeroSection />
-  <AboutSection />
   <ServicesSection />
   <TestimonialsSection />
   <FAQSection />
