@@ -26,7 +26,7 @@ const items = [
       <span class="text-primary">Questions</span>
     </template>
     <ULandingFAQ
-      class="relative divide-y divide-gray-200 rounded-lg bg-gray-50 p-8 shadow ring-1 ring-gray-200 dark:divide-gray-800 dark:bg-gray-900 dark:ring-gray-800"
+      class="relative divide-y divide-gray-200 rounded-lg bg-gray-50 px-8 shadow ring-1 ring-gray-200 dark:divide-gray-800 dark:bg-gray-900 dark:ring-gray-800"
       :items="items"
       multiple
     />
