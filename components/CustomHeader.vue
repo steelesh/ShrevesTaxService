@@ -11,13 +11,13 @@ const isLight = computed({
 
 const links = [
   {
-    label: 'About',
-    to: '/about',
+    label: 'Services',
+    to: '/services',
     exactHash: true
   },
   {
-    label: 'Services',
-    to: '/services',
+    label: 'About',
+    to: '/about',
     exactHash: true
   },
   {
