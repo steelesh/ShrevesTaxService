@@ -1,3 +1,49 @@
+<script setup>
+const colorMode = useColorMode();
+const isLight = computed({
+  get() {
+    return colorMode.value === 'light';
+  },
+  set() {
+    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
+  }
+});
+const navigation = {
+  quicklinks: [
+    { name: 'About', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Contact', href: '/contact' }
+  ],
+  services: [
+    { name: 'Tax Preparation', href: '/services#preparation' },
+    { name: 'Tax Planning', href: '/services#planning' },
+    { name: 'Tax Compliance', href: '/services#compliance' }
+  ],
+  legal: [
+    { name: 'Accessibility', href: '/accessibility' },
+    { name: 'Privacy Policy', href: '/privacy' },
+    { name: 'Terms', href: '/terms' }
+  ],
+  resources: [
+    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Site Map', href: '/sitemap' },
+    { name: 'FAQ', href: '#faq' }
+  ],
+  social: [
+    {
+      name: 'Email',
+      href: 'mailto:wendy@shrevestaxservice.com',
+      icon: 'i-heroicons-envelope-solid'
+    },
+    {
+      name: 'Call',
+      href: 'tel:+17404507107',
+      icon: 'i-heroicons-phone-solid'
+    }
+  ]
+};
+</script>
+
 <template>
   <footer
     v-motion-fade
@@ -5,19 +51,20 @@
     class="bg-gray-100 dark:bg-gray-800"
     aria-labelledby="footer-heading"
   >
-    <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8">
-          <NuxtImg
-            class="h-12"
-            :src="
-              isLight
-                ? '/images/logo/v3/inter/png/v3-logo-black-inter.png'
-                : '/images/logo/v3/inter/png/v3-logo-white-inter.png'
-            "
-            alt="Shreve's Tax Service LLC"
-          />
+          <ClientOnly>
+            <NuxtImg
+              class="h-14"
+              :src="
+                isLight
+                  ? '/images/logo/v3/inter/png/v3-logo-black-inter.png'
+                  : '/images/logo/v3/inter/png/v3-logo-white-inter.png'
+              "
+              alt="Shreve's Tax Service LLC"
+            />
+          </ClientOnly>
           <p class="text-sm leading-6">
             <i
               >A full-service tax preparation office located in<br />
@@ -123,49 +170,3 @@
     </div>
   </footer>
 </template>
-
-<script setup>
-const colorMode = useColorMode();
-const isLight = computed({
-  get() {
-    return colorMode.value === 'light';
-  },
-  set() {
-    colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
-  }
-});
-const navigation = {
-  quicklinks: [
-    { name: 'About', href: '/about' },
-    { name: 'Services', href: '/services' },
-    { name: 'Contact', href: '/contact' }
-  ],
-  services: [
-    { name: 'Tax Preparation', href: '/services#preparation' },
-    { name: 'Tax Planning', href: '/services#planning' },
-    { name: 'Tax Compliance', href: '/services#compliance' }
-  ],
-  legal: [
-    { name: 'Accessibility', href: '/accessibility' },
-    { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms', href: '/terms' }
-  ],
-  resources: [
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Site Map', href: '/sitemap' },
-    { name: 'FAQ', href: '#faq' }
-  ],
-  social: [
-    {
-      name: 'Email',
-      href: 'mailto:wendy@shrevestaxservice.com',
-      icon: 'i-heroicons-envelope-solid'
-    },
-    {
-      name: 'Call',
-      href: 'tel:+17404507107',
-      icon: 'i-heroicons-phone-solid'
-    }
-  ]
-};
-</script>
