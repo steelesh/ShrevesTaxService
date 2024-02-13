@@ -3,5 +3,4 @@
   <AboutSection />
   <ServicesSection />
   <TestimonialsSection />
-  <ContactSection />
 </template>
