@@ -41,8 +41,9 @@ const isLight = computed({
       <template #description>
         <div class="my-20">
           <span>
-            Having served the community for over 20 years, <br />Shreve's Tax
-            Service stands as the trusted tax preparation office in Zanesville.
+            Shreve's Tax Service stands as the trusted tax preparation office in
+            Zanesville, <br />serving the community for over 20 years.
+            <br />
           </span>
         </div>
       </template>
