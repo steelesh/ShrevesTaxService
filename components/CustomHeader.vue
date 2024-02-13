@@ -66,7 +66,7 @@ const links = [
       <div class="flex items-center gap-4">
         <UButton
           class="hidden lg:flex"
-          to="/Contact"
+          to="/contact"
           size="md"
           :variant="isLight ? 'solid' : 'outline'"
           >Contact</UButton
