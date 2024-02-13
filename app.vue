@@ -4,9 +4,11 @@ import { SpeedInsights } from '@vercel/speed-insights/nuxt';
 
 <template>
   <SpeedInsights />
-  <CustomHeader />
-  <UMain>
-    <NuxtPage />
-  </UMain>
-  <CustomFooter />
+  <NuxtLayout>
+    <CustomHeader />
+    <UMain>
+      <NuxtPage />
+    </UMain>
+    <CustomFooter />
+  </NuxtLayout>
 </template>

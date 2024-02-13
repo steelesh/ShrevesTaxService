@@ -1,7 +1,10 @@
-import FAQSection from '../components/FAQSection.vue';
+<script setup lang="ts">
+definePageMeta({
+  layout: 'home'
+});
+</script>
+
 <template>
-  <SquarePattern />
-  <GradientPattern />
   <HeroSection />
   <AboutSection />
   <ServicesSection />
