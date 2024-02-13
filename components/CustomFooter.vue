@@ -51,7 +51,11 @@
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-base font-semibold leading-6">Resources</h3>
+              <h3
+                class="text-base font-semibold leading-6 text-black dark:text-white"
+              >
+                Resources
+              </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.resources" :key="item.name">
                   <a :href="item.href" class="text-sm leading-6">{{
@@ -62,7 +66,11 @@
             </div>
             <div class="mt-10 md:mt-0">
               <div>
-                <h3 class="text-base font-semibold leading-6">Services</h3>
+                <h3
+                  class="text-base font-semibold leading-6 text-black dark:text-white"
+                >
+                  Services
+                </h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li v-for="item in navigation.services" :key="item.name">
                     <a :href="item.href" class="text-sm leading-6">{{
@@ -75,7 +83,11 @@
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-base font-semibold leading-6">Legal</h3>
+              <h3
+                class="text-base font-semibold leading-6 text-black dark:text-white"
+              >
+                Legal
+              </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.legal" :key="item.name">
                   <a :href="item.href" class="text-sm leading-6">{{
@@ -86,7 +98,11 @@
             </div>
             <div class="mt-10 md:mt-0">
               <div>
-                <h3 class="text-base font-semibold leading-6">Quick Links</h3>
+                <h3
+                  class="text-base font-semibold leading-6 text-black dark:text-white"
+                >
+                  Quick Links
+                </h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li v-for="item in navigation.quicklinks" :key="item.name">
                     <a :href="item.href" class="text-sm leading-6">{{
