@@ -18,7 +18,7 @@ const dismiss = () => {
       v-if="showNotification"
       class="flex items-center gap-x-6 bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1 dark:bg-[rgb(45,212,191)]"
     >
-      <p class="text-sm leading-6 text-white dark:text-black">
+      <p class="text-xs leading-6 text-white md:text-sm dark:text-black">
         <a href="/contact">
           <strong class="font-semibold"
             >2023 Tax Deadline is April 15, 2024</strong
