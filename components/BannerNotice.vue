@@ -20,11 +20,10 @@ const dismiss = () => {
     >
       <p class="text-xs leading-6 text-white md:text-sm dark:text-black">
         <a href="/contact">
-          <strong class="font-semibold"
-            >2023 Tax Deadline is April 15, 2024</strong
+          <strong class="font-semibold">2023 Tax Deadline is April 15</strong
           ><svg
             viewBox="0 0 2 2"
-            class="mx-2 inline h-0.5 w-0.5 fill-current"
+            class="mx-1 inline h-0.5 w-0.5 fill-current"
             aria-hidden="true"
           >
             <circle cx="1" cy="1" r="1" /></svg
