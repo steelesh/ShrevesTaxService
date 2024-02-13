@@ -23,10 +23,9 @@ const isLight = computed({
     >
       <!-- TITLE -->
       <template #title>
-        Expert Tax Services
-        <br />
+        <h1>Expert Tax Services</h1>
         <vue-typewriter-effect
-          class="text-primary text-[20px] md:text-[44px]"
+          class="text-primary text-[20px] sm:text-[32px] md:text-[44px]"
           :strings="[
             'At Reasonable Rates',
             'With a Personal Touch',
