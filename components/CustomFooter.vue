@@ -120,16 +120,14 @@ const isLight = computed({
 });
 const navigation = {
   quicklinks: [
-    { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Contact', href: '/contact' }
   ],
   services: [
-    { name: 'Service 1', href: '#' },
-    { name: 'Service 2', href: '#' },
-    { name: 'Service 3', href: '#' },
-    { name: 'Service 4', href: '#' }
+    { name: 'Tax Preparation', href: '#' },
+    { name: 'Tax Planning', href: '#' },
+    { name: 'Tax Compliance', href: '#' }
   ],
   legal: [
     { name: 'Accessibility', href: '/accessibility' },
