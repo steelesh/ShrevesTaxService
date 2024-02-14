@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'About Us',
-    icon: 'i-heroicons-user-group'
+    icon: 'i-heroicons-user-group',
+    to: '/about'
   }
 ];
 </script>

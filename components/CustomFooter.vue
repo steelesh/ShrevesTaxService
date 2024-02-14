@@ -10,7 +10,7 @@ const isLight = computed({
 });
 const navigation = {
   quicklinks: [
-    { name: 'About', href: '/about' },
+    { name: 'About Us', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Contact', href: '/contact' }
   ],
@@ -20,9 +20,9 @@ const navigation = {
     { name: 'Tax Compliance', href: '/services#compliance' }
   ],
   legal: [
-    { name: 'Accessibility', href: '/accessibility' },
+    { name: 'Terms and Conditions', href: '/terms' },
     { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms', href: '/terms' }
+    { name: 'Accessibility', href: '/accessibility' }
   ],
   resources: [
     { name: 'Testimonials', href: '#testimonials' },

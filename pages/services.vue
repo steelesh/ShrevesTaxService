@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'Services',
-    icon: 'i-heroicons-wrench-screwdriver'
+    icon: 'i-heroicons-wrench-screwdriver',
+    to: '/services'
   }
 ];
 </script>
