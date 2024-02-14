@@ -1,5 +1,7 @@
 <template>
+  <CustomHeader />
+  <slot />
+  <CustomFooter />
   <SquarePattern />
   <GradientPattern />
-  <slot />
 </template>
