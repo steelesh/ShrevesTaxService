@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'Site Map',
-    icon: 'i-heroicons-map'
+    icon: 'i-heroicons-map',
+    to: '/sitemap'
   }
 ];
 </script>

@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'Privacy Policy',
-    icon: 'i-heroicons-eye-slash'
+    icon: 'i-heroicons-eye-slash',
+    to: '/privacy'
   }
 ];
 </script>

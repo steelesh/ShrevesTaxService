@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'Accessibility',
-    icon: 'i-heroicons-information-circle'
+    icon: 'i-heroicons-information-circle',
+    to: '/accessibility'
   }
 ];
 </script>

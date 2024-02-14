@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'Terms and Conditions',
-    icon: 'i-heroicons-document-text'
+    icon: 'i-heroicons-document-text',
+    to: '/terms'
   }
 ];
 </script>

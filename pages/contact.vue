@@ -7,7 +7,8 @@ const links = [
   },
   {
     label: 'Contact',
-    icon: 'i-heroicons-chat-bubble-oval-left'
+    icon: 'i-heroicons-chat-bubble-oval-left',
+    to: '/contact'
   }
 ];
 </script>
