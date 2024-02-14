@@ -1,5 +1,4 @@
 <template>
-  <BannerNotice />
   <SquarePattern />
   <GradientPattern />
   <slot />
