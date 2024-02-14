@@ -20,7 +20,13 @@ const items = [
 </script>
 
 <template>
-  <ULandingSection id="faq" class="section" v-motion-fade :delay="100">
+  <ULandingSection
+    description="Have a question? We have answers. If you can't find what you're looking for, please don't hesitate to contact us."
+    id="faq"
+    class="section"
+    v-motion-fade
+    :delay="100"
+  >
     <template #title>
       Frequently Asked
       <span class="text-primary">Questions</span>
