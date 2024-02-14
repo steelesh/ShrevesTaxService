@@ -1,3 +1,21 @@
+<script setup lang="ts">
+const links = [
+  {
+    label: 'Home',
+    icon: 'i-heroicons-home',
+    to: '/'
+  },
+  {
+    label: 'Contact',
+    icon: 'i-heroicons-chat-bubble-oval-left'
+  }
+];
+</script>
+
 <template>
-  <ContactSection />
+  <UPage>
+    <UPageBody>
+      <UBreadcrumb :links="links" />
+    </UPageBody>
+  </UPage>
 </template>

@@ -1,6 +1,5 @@
 <template>
   <CustomHeader />
-  <NuxtImg src="/images/bg/tax-form-bg.jpg" />
-  <slot />
+  <UContainer> <slot /> </UContainer>
   <CustomFooter />
 </template>

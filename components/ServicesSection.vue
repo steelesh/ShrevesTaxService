@@ -1,15 +1,13 @@
 <template>
-  <ULandingSection id="services" class="section" v-motion-fade :delay="100">
-    <template #title>
-      <span class="text-primary">Services</span>
-      We Offer</template
-    >
-    <template #description>
-      Our services are designed to meet the needs of individuals and small
-      businesses, providing guidance and support for tax preparation, planning,
-      and compliance. Wendy ensures that each client receives personalized
-      attention and thorough assistance.
-    </template>
+  <ULandingSection
+    headline="Services"
+    title="What We Can Do For You"
+    description="Our services are designed to meet the needs of individuals and small businesses, providing guidance and support for tax preparation, planning, and compliance. Wendy ensures that each client receives personalized attention and thorough assistance."
+    id="services"
+    class="section"
+    v-motion-fade
+    :delay="100"
+  >
     <ULandingGrid>
       <ULandingCard
         class="col-span-4 row-span-2"

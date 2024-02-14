@@ -1,8 +1,13 @@
 <template>
-  <ULandingSection id="testimonials" class="section" v-motion-fade :delay="100">
-    <template #title>
-      <span>What <span class="text-primary">Our Clients</span> Are Saying</span>
-    </template>
+  <ULandingSection
+    headline="Testimonials"
+    title="What Our Clients Are Saying"
+    description="Our customers are our best advocates. Read what they have to say about our work."
+    id="testimonials"
+    class="section"
+    v-motion-fade
+    :delay="100"
+  >
     <ULandingGrid>
       <ULandingTestimonial
         class="col-span-6 row-span-2"
