@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Shreve's Tax Service - Accessibility Statement"
+});
 const links = [
   {
     label: 'Home',

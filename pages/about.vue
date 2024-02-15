@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Shreve's Tax Service - About Us"
+});
 const links = [
   {
     label: 'Home',

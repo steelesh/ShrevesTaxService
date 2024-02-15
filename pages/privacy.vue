@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Shreve's Tax Service - Privacy Policy"
+});
 const links = [
   {
     label: 'Home',
