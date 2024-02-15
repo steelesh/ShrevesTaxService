@@ -33,8 +33,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       htmlAttrs: { lang: 'en-US' },
-      viewport:
-        'width=device-width, initial-scale=0, maximum-scale=1, user-scalable=no',
+      viewport: 'width=device-width, initial-scale=1.0, maximum-scale=5.0',
       meta: [
         { name: 'robots', content: 'noindex, nofollow' },
         { name: 'msapplication-TileColor', content: '#ffffff' },
