@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@vueuse/motion/nuxt',
     '@vueuse/nuxt',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxt/content'
   ],
   ui: {
     icons: ['heroicons', 'simple-icons']
