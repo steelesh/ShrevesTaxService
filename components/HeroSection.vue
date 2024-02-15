@@ -54,6 +54,7 @@ const isLight = computed({
           icon="i-heroicons-map-pin"
           size="xs"
           class="cursor-default rounded-full"
+          aria-label="Location"
         />
       </template>
       <!-- BUTTONS -->
@@ -63,6 +64,7 @@ const isLight = computed({
           size="xl"
           :variant="isLight ? 'solid' : 'outline'"
           padded
+          aria-label="Learn More"
         >
           Learn More
         </UButton>

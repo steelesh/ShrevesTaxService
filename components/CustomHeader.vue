@@ -57,10 +57,19 @@ const links = [
           to="/contact"
           size="md"
           :variant="isLight ? 'solid' : 'outline'"
+          aria-label="Contact"
           >Contact</UButton
         >
-        <UColorModeButton size="lg" class="flex lg:hidden" />
-        <UColorModeToggle size="lg" class="hidden lg:flex" />
+        <UColorModeButton
+          size="lg"
+          class="flex lg:hidden"
+          aria-label="Toggle Color Mode"
+        />
+        <UColorModeToggle
+          size="lg"
+          class="hidden lg:flex"
+          aria-label="Toggle Color Mode"
+        />
       </div>
     </template>
     <!-- PANEL -->

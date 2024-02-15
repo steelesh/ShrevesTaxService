@@ -19,6 +19,7 @@
           to="/services#preparation"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
+          aria-label="Learn More"
           >Learn More</UButton
         ></ULandingCard
       >
@@ -32,6 +33,7 @@
           to="/services#planning"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
+          aria-label="Learn More"
           >Learn More</UButton
         ></ULandingCard
       >
@@ -45,6 +47,7 @@
           to="/services#compliance"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
+          aria-label="Learn More"
           >Learn More</UButton
         ></ULandingCard
       >
