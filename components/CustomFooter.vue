@@ -62,7 +62,7 @@ const navigation = {
                   ? '/images/logo/v3/inter/png/v3-logo-black-inter.png'
                   : '/images/logo/v3/inter/png/v3-logo-white-inter.png'
               "
-              alt="Shreve's Tax Service LLC"
+              alt="Shreve's Tax Service LLC. Logo"
             />
           </ClientOnly>
           <p class="text-sm leading-6">

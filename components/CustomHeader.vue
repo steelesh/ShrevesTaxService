@@ -35,6 +35,7 @@ const links = [
         <NuxtImg
           class="h-12"
           src="/images/logo/misc/png/plant-group-no-bottom.png"
+          alt="Shreve's Tax Service Logo"
         />
         <span class="font-bold">Shreve's Tax Service</span>
       </NuxtLink>
@@ -47,6 +48,7 @@ const links = [
                 ? '/images/logo/v1/inter/png/v1-logo-black-inter.png'
                 : '/images/logo/v1/inter/png/v1-logo-white-inter.png'
             "
+            alt="Shreve's Tax Service Logo"
           />
         </ClientOnly>
       </NuxtLink>
