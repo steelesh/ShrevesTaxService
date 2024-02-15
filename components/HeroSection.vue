@@ -64,7 +64,7 @@ const isLight = computed({
           size="xl"
           :variant="isLight ? 'solid' : 'outline'"
           padded
-          aria-label="Learn More"
+          aria-label="Learn More about our services"
         >
           Learn More
         </UButton>

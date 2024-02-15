@@ -19,7 +19,7 @@
           to="/services#preparation"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
-          aria-label="Learn More"
+          aria-label="Learn more about our tax preparation service"
           >Learn More</UButton
         ></ULandingCard
       >
@@ -33,7 +33,7 @@
           to="/services#planning"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
-          aria-label="Learn More"
+          aria-label="Learn more about our tax planning service"
           >Learn More</UButton
         ></ULandingCard
       >
@@ -47,7 +47,7 @@
           to="/services#compliance"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
-          aria-label="Learn More"
+          aria-label="Learn more about our tax compliance service"
           >Learn More</UButton
         ></ULandingCard
       >

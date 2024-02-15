@@ -31,18 +31,13 @@ const dismiss = () => {
         </a>
       </p>
       <div class="flex flex-1 justify-end">
-        <button
-          aria-label="Dismiss banner notice"
-          type="button"
+        <UButton
           @click="dismiss"
           class="-m-3 pb-3 pl-2 pr-2 pt-3 focus-visible:outline-offset-[-4px]"
+          icon="i-heroicons-x-mark"
+          aria-label="Dismiss banner notice"
         >
-          <Icon
-            name="i-heroicons-x-mark"
-            class="h-3 w-3 text-white md:h-5 md:w-5 dark:text-black"
-            aria-hidden="true"
-          />
-        </button>
+        </UButton>
       </div>
     </div>
   </ClientOnly>
