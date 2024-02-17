@@ -18,8 +18,13 @@ const links = [
 
 <template>
   <UPage>
+    <UBreadcrumb :links="links" class="mt-8" />
+    <UPageHeader
+      title="Contact Us"
+      description="Whether you have questions, need assistance, or want to schedule a consultation, we're here to help!"
+    />
     <UPageBody>
-      <UBreadcrumb :links="links" />
+      <ContactSection />
     </UPageBody>
   </UPage>
 </template>
