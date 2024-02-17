@@ -23,6 +23,8 @@ const links = [
       title="Services"
       description="We are here to help you with your tax preparation, tax planning, and tax compliance needs."
     />
-    <UPageBody> </UPageBody>
+    <UPageBody prose>
+      <ContentDoc />
+    </UPageBody>
   </UPage>
 </template>
