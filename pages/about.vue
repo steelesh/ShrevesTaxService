@@ -21,10 +21,7 @@ const links = [
     <UBreadcrumb :links="links" class="mt-8" />
     <UPageHeader
       title="About Us"
-      description="Wendy Shreve is an authorized E-File Provider and a dedicated
-        participant in the IRS Annual Filing Season Program. Wendy commits to
-        high standards of accuracy and compliance, while ensuring each client
-        receives friendly, professional service."
+      description="Get to know us and our background at Shreve's Tax Service."
     />
     <UPageBody> </UPageBody>
   </UPage>
