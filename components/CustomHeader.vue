@@ -1,4 +1,8 @@
 <script setup>
+import { useRouter } from 'vue-router';
+const { isHeaderDialogOpen } = useUIState();
+const router = useRouter();
+
 const colorMode = useColorMode();
 const isLight = computed({
   get() {
@@ -9,14 +13,19 @@ const isLight = computed({
   }
 });
 
+function navigateTo(to) {
+  isHeaderDialogOpen.value = false;
+  router.push(to);
+}
+
 const links = [
   {
     label: 'Services',
-    to: '/services'
+    click: () => navigateTo('/services')
   },
   {
     label: 'About Us',
-    to: '/about'
+    click: () => navigateTo('/about')
   }
 ];
 </script>
@@ -31,7 +40,10 @@ const links = [
     }"
   >
     <template #left>
-      <NuxtLink to="/" class="hidden items-center gap-2 md:flex">
+      <NuxtLink
+        @click="navigateTo('/')"
+        class="hidden cursor-pointer items-center gap-2 md:flex"
+      >
         <NuxtImg
           class="h-12"
           src="/images/logo/misc/png/plant-group-no-bottom.png"
@@ -39,18 +51,16 @@ const links = [
         />
         <span class="font-bold">Shreve's Tax Service</span>
       </NuxtLink>
-      <NuxtLink to="/" class="block md:hidden">
-        <ClientOnly>
-          <NuxtImg
-            class="h-14"
-            :src="
-              isLight
-                ? '/images/logo/v1/inter/png/v1-logo-black-inter.png'
-                : '/images/logo/v1/inter/png/v1-logo-white-inter.png'
-            "
-            alt="Shreve's Tax Service Logo"
-          />
-        </ClientOnly>
+      <NuxtLink @click="navigateTo('/')" class="block cursor-pointer md:hidden">
+        <NuxtImg
+          class="h-14"
+          :src="
+            isLight
+              ? '/images/logo/v1/inter/png/v1-logo-black-inter.png'
+              : '/images/logo/v1/inter/png/v1-logo-white-inter.png'
+          "
+          alt="Shreve's Tax Service Logo"
+        />
       </NuxtLink>
     </template>
     <template #right>
