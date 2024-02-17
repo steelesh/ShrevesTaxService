@@ -53,7 +53,7 @@ const links = [
         </p>
       </div>
 
-      <div class="w-[45%] self-center">
+      <div class="w-[80%] self-center lg:w-[45%]">
         <NuxtImg
           src="https://picsum.photos/1200/850"
           alt="Wendy Shreve"
