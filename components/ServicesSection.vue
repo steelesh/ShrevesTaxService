@@ -16,7 +16,7 @@
         description="Our tax preparation service ensures accurate and timely filing of individual and small business tax returns, guiding you through the process with expertise and attention to detail."
         ><UButton
           class="w-32"
-          to="/services#preparation"
+          to="/services#tax-preparation"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
           aria-label="Learn more about our tax preparation service"
@@ -30,7 +30,7 @@
         description="Our tax planning service helps you minimize tax liability and maximize deductions through strategic planning tailored to your financial situation and goals."
         ><UButton
           class="w-32"
-          to="/services#planning"
+          to="/services#tax-planning"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
           aria-label="Learn more about our tax planning service"
@@ -44,7 +44,7 @@
         description="We keep you informed and compliant with changing tax laws and regulations, ensuring you meet filing requirements and deadlines without stress or penalties."
         ><UButton
           class="w-32"
-          to="/services#compliance"
+          to="/services#tax-compliance"
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
           aria-label="Learn more about our tax compliance service"
