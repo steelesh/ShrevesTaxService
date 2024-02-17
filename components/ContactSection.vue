@@ -12,6 +12,10 @@ const schema = z.object({
     .string({ required_error: 'Last name is required' })
     .min(2, 'Last name must be at least 2 characters')
     .max(50, 'Last name must be no longer than 50 characters'),
+  subject: z
+    .string({ required_error: 'Subject is required' })
+    .min(5, 'Subject must be at least 5 characters')
+    .max(100, 'Subject must be no longer than 100 characters'),
   message: z
     .string({ required_error: 'Message is required' })
     .min(10, 'Message must be at least 10 characters')
@@ -28,6 +32,7 @@ type Schema = z.infer<typeof schema>;
 const state = reactive({
   firstName: undefined,
   lastName: undefined,
+  subject: undefined,
   message: undefined,
   acceptprivacypolicy: undefined
 });
@@ -46,66 +51,67 @@ const clearForm = () => {
 </script>
 
 <template>
-  <ULandingSection class="section" v-motion-fade :delay="100">
-    <UForm
-      :schema="schema"
-      :state="state"
-      :validate-on="['submit']"
-      @submit="onSubmit"
-      class="relative space-y-4 divide-gray-200 rounded-xl border-2 bg-gray-50 p-8 shadow ring-1 ring-gray-200 md:p-20 dark:divide-gray-800 dark:border-gray-800 dark:bg-gray-900 dark:ring-gray-500"
+  <h2
+    class="my-8 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl dark:text-white"
+  >
+    Send a Message
+  </h2>
+  <UForm
+    :schema="schema"
+    :state="state"
+    :validate-on="['submit']"
+    @submit="onSubmit"
+    class="space-y-4"
+  >
+    <div
+      class="flex flex-col justify-between gap-0 space-y-8 sm:flex-row sm:gap-24 sm:space-y-0"
     >
-      <h2
-        class="mb-16 text-center text-3xl font-bold tracking-tight text-gray-900 sm:mb-24 sm:text-4xl lg:text-5xl dark:text-white"
+      <UFormGroup
+        class="w-full sm:w-1/2"
+        required
+        label="First Name"
+        name="firstName"
       >
-        Contact <span class="text-primary">Us</span>
-      </h2>
-      <div
-        class="flex flex-col justify-between gap-0 space-y-8 sm:flex-row sm:gap-24 sm:space-y-0"
+        <UInput size="lg" v-model="state.firstName" />
+      </UFormGroup>
+      <UFormGroup
+        class="w-full sm:w-1/2"
+        required
+        label="Last Name"
+        name="lastName"
       >
-        <UFormGroup
-          class="w-full sm:w-1/2"
-          required
-          label="First Name"
-          name="firstName"
-        >
-          <UInput size="lg" v-model="state.firstName" />
-        </UFormGroup>
-        <UFormGroup
-          class="w-full sm:w-1/2"
-          required
-          label="Last Name"
-          name="lastName"
-        >
-          <UInput size="lg" v-model="state.lastName" />
-        </UFormGroup>
-      </div>
-      <UFormGroup required label="Message" name="message">
-        <UTextarea
-          autoresize
-          size="xl"
-          :rows="5"
-          placeholder="Write your message..."
-          v-model="state.message"
+        <UInput size="lg" v-model="state.lastName" />
+      </UFormGroup>
+    </div>
+    <UFormGroup required label="Subject" name="subject">
+      <UInput size="lg" v-model="state.subject" />
+    </UFormGroup>
+    <UFormGroup required label="Message" name="message">
+      <UTextarea
+        autoresize
+        size="xl"
+        :rows="5"
+        placeholder="Write your message..."
+        v-model="state.message"
+      />
+    </UFormGroup>
+    <UFormGroup name="acceptprivacypolicy">
+      <div class="flex items-center gap-4">
+        <UToggle
+          size="md"
+          on-icon="i-heroicons-check-20-solid"
+          off-icon="i-heroicons-x-mark-20-solid"
+          v-model="state.acceptprivacypolicy"
         />
-      </UFormGroup>
-      <UFormGroup name="acceptprivacypolicy">
-        <div class="flex items-center gap-4">
-          <UToggle
-            size="md"
-            on-icon="i-heroicons-check-20-solid"
-            off-icon="i-heroicons-x-mark-20-solid"
-            v-model="state.acceptprivacypolicy"
-          />
-          <span
-            >By selecting this, you agree to our
-            <NuxtLink to="#" class="text-primary">privacy policy</NuxtLink>.
-          </span>
-        </div>
-      </UFormGroup>
-      <UButton size="lg" type="submit">Submit</UButton>
-      <UButton size="lg" variant="outline" class="ml-2" @click="clearForm"
-        >Clear</UButton
-      >
-    </UForm>
-  </ULandingSection>
+        <span
+          >By selecting this, you agree to our
+          <NuxtLink to="#" class="text-primary">privacy policy</NuxtLink>.
+        </span>
+      </div>
+    </UFormGroup>
+    <UButton size="lg" type="submit">Submit</UButton>
+    <UButton size="lg" variant="outline" class="ml-2" @click="clearForm"
+      >Clear</UButton
+    >
+  </UForm>
 </template>
