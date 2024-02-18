@@ -25,22 +25,18 @@ const links = [
 <template>
   <UPage>
     <UBreadcrumb :links="links" class="mt-8" />
-    <UPageHeader
-      title="Contact Us"
-      description="Whether you have questions, need assistance, or want to schedule a consultation, we're here to help!"
-      ><template #description>
-        <p class="mb-4 text-sm">
-          <i>
-            To ensure personalized service, appointments are required for all
-            consultations and meetings.
-          </i>
-        </p>
-        <p>
-          Whether you have questions, need assistance, or want to schedule a
-          consultation, we're here to help!
-        </p>
-      </template></UPageHeader
-    >
+    <UPageHeader title="Contact Us">
+      <p class="my-4 text-sm">
+        <i>
+          To ensure personalized service, appointments are required for all
+          consultations and meetings.
+        </i>
+      </p>
+      <p>
+        Whether you have questions, need assistance, or want to schedule a
+        consultation, we're here to help!
+      </p>
+    </UPageHeader>
     <div class="mt-8">
       <h2
         class="my-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl dark:text-white"
