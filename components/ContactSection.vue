@@ -103,7 +103,7 @@ const clearForm = () => {
           off-icon="i-heroicons-x-mark-20-solid"
           v-model="state.acceptprivacypolicy"
         />
-        <span
+        <span class="my-4 text-sm md:text-base"
           >By selecting this, you agree to our
           <NuxtLink to="#" class="text-primary">privacy policy</NuxtLink>.
         </span>
