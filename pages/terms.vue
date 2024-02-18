@@ -29,7 +29,9 @@ const links = [
       </template>
     </UPageHeader>
     <UPageBody prose>
-      <ContentDoc />
+      <article>
+        <ContentDoc />
+      </article>
     </UPageBody>
   </UPage>
 </template>
