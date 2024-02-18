@@ -1,6 +1,19 @@
 <script setup lang="ts">
 useHead({
-  title: "Shreve's Tax Service - About Us"
+  title: "Shreve's Tax Service - About Us",
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Learn about Shreve's Tax Service and our background. We've proudly served the Zanesville community since 2001."
+    },
+    {
+      name: 'keywords',
+      content:
+        'tax service, tax preparation, IRS, E-File Provider, Zanesville, Wendy Shreve'
+    },
+    { name: 'author', content: "Shreve's Tax Service" }
+  ]
 });
 const links = [
   {

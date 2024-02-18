@@ -1,6 +1,12 @@
 <script setup lang="ts">
 useHead({
-  title: "Shreve's Tax Service - Contact Us"
+  title: "Shreve's Tax Service - Contact Us",
+  meta: [
+    {
+      name: 'description',
+      content: "Shreve's Tax Service Contact Information"
+    }
+  ]
 });
 const links = [
   {

@@ -1,6 +1,12 @@
 <script setup lang="ts">
 useHead({
-  title: "Shreve's Tax Service - Privacy Policy"
+  title: "Shreve's Tax Service - Privacy Policy",
+  meta: [
+    {
+      name: 'description',
+      content: "Shreve's Tax Service Privacy Policy"
+    }
+  ]
 });
 const links = [
   {

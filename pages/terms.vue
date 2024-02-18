@@ -1,6 +1,12 @@
 <script setup lang="ts">
 useHead({
-  title: "Shreve's Tax Service - Terms and Conditions"
+  title: "Shreve's Tax Service - Terms and Conditions",
+  meta: [
+    {
+      name: 'description',
+      content: "Shreve's Tax Service Terms and Conditions"
+    }
+  ]
 });
 const links = [
   {

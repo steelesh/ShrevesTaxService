@@ -1,6 +1,12 @@
 <script setup lang="ts">
 useHead({
-  title: "Shreve's Tax Service - Accessibility Statement"
+  title: "Shreve's Tax Service - Accessibility Statement",
+  meta: [
+    {
+      name: 'description',
+      content: "Shreve's Tax Service Accessibility Statement"
+    }
+  ]
 });
 const links = [
   {
