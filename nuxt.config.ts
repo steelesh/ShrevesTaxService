@@ -41,7 +41,16 @@ export default defineNuxtConfig({
           name: 'msapplication-config',
           content: './favicon/browserconfig.xml'
         },
-        { name: 'theme-color', content: '#ffffff' }
+        { name: 'theme-color', content: '#ffffff' },
+        {
+          name: 'keywords',
+          content:
+            'tax service, tax preparation, IRS, E-File Provider, Zanesville, Wendy Shreve'
+        },
+        {
+          name: 'author',
+          content: "Shreve's Tax Service"
+        }
       ],
       link: [
         {
