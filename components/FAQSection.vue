@@ -11,10 +11,6 @@ const items = [
   {
     label: 'Question #3',
     content: 'Answer to question #3'
-  },
-  {
-    label: 'Question #4',
-    content: 'Answer to question #4'
   }
 ];
 </script>
