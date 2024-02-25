@@ -269,5 +269,4 @@ Email: wendy@shrevestaxservice.com
 <p class="mt-4 text-sm">See related:
   <a class="text-primary" href="/privacy">Privacy Policy</a>,
   <a class="text-primary" href="/accessibility">Accessibility</a>,
-  <a class="text-primary" href="/sitemap">Site Map</a>
 </p>

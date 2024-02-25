@@ -26,7 +26,6 @@ const navigation = {
   ],
   resources: [
     { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Site Map', href: '/sitemap' },
     { name: 'FAQ', href: '#faq' }
   ],
   social: [
