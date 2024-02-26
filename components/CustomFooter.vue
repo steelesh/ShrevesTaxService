@@ -25,8 +25,8 @@ const navigation = {
     { name: 'Accessibility', href: '/accessibility' }
   ],
   resources: [
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'FAQ', href: '#faq' }
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'FAQ', href: '/#faq' }
   ],
   social: [
     {
