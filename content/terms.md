@@ -265,8 +265,3 @@ Email: wendy@shrevestaxservice.com
 > These terms of use were created using Termly's [Terms and Conditions Generator](https://termly.io/products/terms-and-conditions-generator/).
 
 <hr />
-
-<p class="mt-4 text-sm">See related:
-  <a class="text-primary" href="/privacy">Privacy Policy</a>,
-  <a class="text-primary" href="/accessibility">Accessibility</a>,
-</p>
