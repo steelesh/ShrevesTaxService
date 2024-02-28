@@ -104,9 +104,9 @@ const navigation = {
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.resources" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6">{{
+                  <NuxtLink :to="item.href" class="text-sm leading-6">{{
                     item.name
-                  }}</a>
+                  }}</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -119,9 +119,9 @@ const navigation = {
                 </h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li v-for="item in navigation.services" :key="item.name">
-                    <a :href="item.href" class="text-sm leading-6">{{
+                    <NuxtLink :to="item.href" class="text-sm leading-6">{{
                       item.name
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                 </ul>
               </div>
@@ -136,9 +136,9 @@ const navigation = {
               </h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li v-for="item in navigation.legal" :key="item.name">
-                  <a :href="item.href" class="text-sm leading-6">{{
+                  <NuxtLink :to="item.href" class="text-sm leading-6">{{
                     item.name
-                  }}</a>
+                  }}</NuxtLink>
                 </li>
               </ul>
             </div>
@@ -151,9 +151,9 @@ const navigation = {
                 </h3>
                 <ul role="list" class="mt-6 space-y-4">
                   <li v-for="item in navigation.quicklinks" :key="item.name">
-                    <a :href="item.href" class="text-sm leading-6">{{
+                    <NuxtLink :to="item.href" class="text-sm leading-6">{{
                       item.name
-                    }}</a>
+                    }}</NuxtLink>
                   </li>
                 </ul>
               </div>
