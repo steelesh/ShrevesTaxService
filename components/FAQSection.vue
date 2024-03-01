@@ -1,20 +1,20 @@
 <script setup lang="ts">
 const items = [
   {
-    label: 'What do I need to bring for my tax preparation appointment?',
+    label: "What do I need to bring for my tax preparation appointment?",
     content:
-      'Please bring all relevant financial documents, including W-2s, 1099s, records of expenses, investment income statements, and any other documents related to income or deductions.'
+      "Please bring all relevant financial documents, including W-2s, 1099s, records of expenses, investment income statements, and any other documents related to income or deductions.",
   },
   {
-    label: 'How long does the tax preparation process take?',
+    label: "How long does the tax preparation process take?",
     content:
-      'The duration varies depending on your financial situation. After our initial consultation, we will provide you with an estimated timeline.'
+      "It varies depending on your financial situation. After our initial consultation, we will provide you with an estimated timeline.",
   },
   {
-    label: 'Can you help with tax filings from previous years?',
+    label: "Can you help with tax filings from previous years?",
     content:
-      'Yes, we can assist with filing back taxes and will work with you to gather necessary documentation and submit past year returns.'
-  }
+      "Yes, we can assist with filing back taxes and will work with you to gather necessary documentation and submit past year returns.",
+  },
 ];
 </script>
 
