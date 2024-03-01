@@ -57,8 +57,3 @@ Phone: <a href="tel:+17404507107">(740) 450-7107</a>
 Email: wendy@shrevestaxservice.com
 
 <hr />
-
-<p class="mt-4 text-sm">See related:
-  <a class="text-primary" href="/terms">Terms and Conditions</a>,
-  <a class="text-primary" href="/accessibility">Accessibility</a>,
-</p>

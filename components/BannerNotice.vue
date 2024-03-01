@@ -19,7 +19,7 @@ const dismiss = () => {
       class="flex items-center gap-x-6 bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1 dark:bg-[rgb(45,212,191)]"
     >
       <p class="text-xs leading-6 text-white md:text-sm dark:text-black">
-        <a href="/contact" @click="dismiss">
+        <NuxtLink to="/contact" @click="dismiss">
           <strong class="font-semibold">2023 Tax Deadline is April 15</strong
           ><svg
             viewBox="0 0 2 2"
@@ -28,7 +28,7 @@ const dismiss = () => {
           >
             <circle cx="1" cy="1" r="1" /></svg
           >File with us today!
-        </a>
+        </NuxtLink>
       </p>
       <div class="flex flex-1 justify-end">
         <button
