@@ -126,7 +126,8 @@ const clearForm = () => {
         />
         <span class="my-4 text-sm md:text-base"
           >By selecting this, you agree to our
-          <NuxtLink to="#" class="text-primary">privacy policy</NuxtLink>.
+          <NuxtLink to="/privacy" class="text-primary">privacy policy</NuxtLink
+          >.
         </span>
       </div>
     </UFormGroup>
