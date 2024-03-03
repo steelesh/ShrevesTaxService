@@ -3,6 +3,11 @@ import { z } from 'zod';
 import { reactive } from 'vue';
 import type { FormSubmitEvent } from '#ui/types';
 
+const isModalOpen = ref(false);
+const modalTitle = ref('');
+const modalMessage = ref('');
+const isSubmitting = ref(false);
+
 const schema = z.object({
   firstName: z
     .string({ required_error: 'First name is required' })
@@ -38,13 +43,35 @@ const state = reactive({
 });
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-  // Do something with form data
-  console.log(event.data);
+  isSubmitting.value = true;
+  try {
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(event.data)
+    });
+    if (!response.ok) {
+      throw new Error('Failed to send email');
+    }
+
+    modalTitle.value = `Thank You, ${state.firstName} ${state.lastName}! Your Message Has Been Received.`;
+    modalMessage.value = `We've successfully received your message and appreciate you taking the time to write.`;
+  } catch (error) {
+    modalTitle.value = `Oops, Something Went Wrong!`;
+    modalMessage.value = `${state.firstName} - Unfortunately, we encountered an issue processing your message. Please try submitting again later, or if the problem persists, feel free to contact us directly via email at wendy@shrevestaxservice.com or by phone at (740) 450-7107 . We're here to help!`;
+  } finally {
+    isSubmitting.value = false;
+    isModalOpen.value = true;
+    clearForm();
+  }
 }
 
 const clearForm = () => {
   state.firstName = undefined;
   state.lastName = undefined;
+  state.subject = undefined;
   state.message = undefined;
   state.acceptprivacypolicy = undefined;
 };
@@ -56,13 +83,7 @@ const clearForm = () => {
   >
     Send a Message
   </h2>
-  <UForm
-    :schema="schema"
-    :state="state"
-    :validate-on="['submit']"
-    @submit="onSubmit"
-    class="space-y-4"
-  >
+  <UForm :schema="schema" :state="state" @submit="onSubmit" class="space-y-4">
     <div
       class="flex flex-col justify-between gap-0 space-y-8 sm:flex-row sm:gap-24 sm:space-y-0"
     >
@@ -109,9 +130,30 @@ const clearForm = () => {
         </span>
       </div>
     </UFormGroup>
-    <UButton size="lg" type="submit">Submit</UButton>
+    <UButton
+      :ui="{
+        icon: {
+          size: 'sm'
+        }
+      }"
+      size="lg"
+      type="submit"
+      :loading="isSubmitting"
+      >Submit</UButton
+    >
     <UButton size="lg" variant="outline" class="ml-2" @click="clearForm"
       >Clear</UButton
     >
   </UForm>
+  <UModal class="prose" v-model="isModalOpen">
+    <UCard>
+      <h3>
+        {{ modalTitle }}
+      </h3>
+      <p>{{ modalMessage }}</p>
+      <div>
+        <UButton size="lg" @click="isModalOpen = false">Close</UButton>
+      </div>
+    </UCard>
+  </UModal>
 </template>
