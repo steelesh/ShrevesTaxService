@@ -54,10 +54,10 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
     });
     if (!response.ok) {
       throw new Error('Failed to send email');
+    } else {
+      modalTitle.value = `Thank You, ${state.firstName} ${state.lastName}! Your Message Has Been Received.`;
+      modalMessage.value = `We've successfully received your message and appreciate you taking the time to write.`;
     }
-
-    modalTitle.value = `Thank You, ${state.firstName} ${state.lastName}! Your Message Has Been Received.`;
-    modalMessage.value = `We've successfully received your message and appreciate you taking the time to write.`;
   } catch (error) {
     modalTitle.value = `Oops, Something Went Wrong!`;
     modalMessage.value = `${state.firstName} - Unfortunately, we encountered an issue processing your message. Please try submitting again later, or if the problem persists, feel free to contact us directly via email at wendy@shrevestaxservice.com or by phone at (740) 450-7107 . We're here to help!`;
@@ -145,7 +145,7 @@ const clearForm = () => {
       >Clear</UButton
     >
   </UForm>
-  <UModal class="prose" v-model="isModalOpen">
+  <UModal class="prose dark:prose-invert" v-model="isModalOpen">
     <UCard>
       <h3>
         {{ modalTitle }}
