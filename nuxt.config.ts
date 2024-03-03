@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     ['@nuxt/ui', { ui: { global: true } }],
     ['@nuxtjs/eslint-module', { lintOnStart: false }],
     ['@nuxtjs/stylelint-module', { lintOnStart: false }],
+    'nuxt-security',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@vueuse/motion/nuxt',
