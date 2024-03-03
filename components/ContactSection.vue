@@ -11,18 +11,22 @@ const isSubmitting = ref(false);
 const schema = z.object({
   firstName: z
     .string({ required_error: 'First name is required' })
+    .trim()
     .min(2, 'First name must be at least 2 characters')
     .max(50, 'First name must be no longer than 50 characters'),
   lastName: z
     .string({ required_error: 'Last name is required' })
+    .trim()
     .min(2, 'Last name must be at least 2 characters')
     .max(50, 'Last name must be no longer than 50 characters'),
   subject: z
     .string({ required_error: 'Subject is required' })
+    .trim()
     .min(5, 'Subject must be at least 5 characters')
     .max(100, 'Subject must be no longer than 100 characters'),
   message: z
     .string({ required_error: 'Message is required' })
+    .trim()
     .min(10, 'Message must be at least 10 characters')
     .max(500, 'Message must be no longer than 500 characters'),
   acceptprivacypolicy: z

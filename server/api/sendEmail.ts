@@ -4,10 +4,10 @@ import nodemailer from 'nodemailer';
 const config = useRuntimeConfig();
 
 const schema = z.object({
-  firstName: z.string().min(2).max(50),
-  lastName: z.string().min(2).max(50),
-  subject: z.string().min(5).max(100),
-  message: z.string().min(10).max(500),
+  firstName: z.string().trim().min(2).max(50),
+  lastName: z.string().trim().min(2).max(50),
+  subject: z.string().trim().min(5).max(100),
+  message: z.string().trim().min(10).max(500),
   acceptprivacypolicy: z.boolean().refine((val) => val, {
     message: 'You must accept the privacy policy to send a message'
   })
