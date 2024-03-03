@@ -13,6 +13,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/content'
   ],
+  security: {
+    rateLimiter: false
+  },
   routeRules: {
     '/api/sendEmail': {
       security: {
