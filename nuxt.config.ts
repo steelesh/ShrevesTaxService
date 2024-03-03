@@ -13,6 +13,24 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/content'
   ],
+  routeRules: {
+    '/api/sendEmail': {
+      security: {
+        rateLimiter: {
+          tokensPerInterval: 3,
+          interval: 300000,
+          headers: true,
+          throwError: true
+        }
+      }
+    }
+  },
+  runtimeConfig: {
+    smtpHost: process.env.SMTP_HOST,
+    smtpPort: process.env.SMTP_PORT,
+    smtpUser: process.env.SMTP_USER,
+    smtpPass: process.env.SMTP_PASS
+  },
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
