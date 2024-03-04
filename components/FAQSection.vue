@@ -20,7 +20,7 @@ const items = [
 
 <template>
   <ULandingSection
-    headline="faq"
+    headline="Faq"
     description="Have a question? We have answers. If you can't find what you're looking for, please don't hesitate to contact us."
     id="faq"
     class="section"
