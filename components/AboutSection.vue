@@ -21,10 +21,10 @@
     ]"
   >
     <template #title> About <span class="text-primary">Us</span> </template>
-    <NuxtImg
-      src="https://picsum.photos/640/360"
-      class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"
-      alt="Portrait of Wendy Shreve"
-    />
+    <!--    <NuxtImg-->
+    <!--      src="https://picsum.photos/640/360"-->
+    <!--      class="w-full rounded-md shadow-xl ring-1 ring-gray-300 dark:ring-gray-700"-->
+    <!--      alt="Portrait of Wendy Shreve"-->
+    <!--    />-->
   </ULandingSection>
 </template>
