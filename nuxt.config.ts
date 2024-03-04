@@ -11,8 +11,15 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@vueuse/nuxt',
     '@nuxt/image',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/seo'
   ],
+  site: {
+    url: 'https://example.com',
+    name: 'Awesome Site',
+    description: 'Welcome to my awesome site!',
+    defaultLocale: 'en' // not needed if you have @nuxtjs/i18n installed
+  },
   routeRules: {
     '/api/sendEmail': {
       security: {
