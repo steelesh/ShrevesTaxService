@@ -68,7 +68,7 @@ const links = [
 
       <div class="w-[80%] self-center lg:w-[45%]">
         <NuxtImg
-          src="https://picsum.photos/1200/850"
+          src="/images/bg/tax-form-bg.jpg"
           alt="Wendy Shreve"
           class="rounded-lg"
         />
