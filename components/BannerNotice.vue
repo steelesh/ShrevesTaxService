@@ -16,7 +16,7 @@ const dismiss = () => {
   <ClientOnly>
     <div
       v-if="showNotification"
-      class="flex items-center gap-x-6 bg-black px-6 py-2.5 sm:px-3.5 sm:before:flex-1 dark:bg-[rgb(45,212,191)]"
+      class="hidden items-center gap-x-6 bg-black px-6 py-2.5 sm:flex sm:px-3.5 sm:before:flex-1 dark:bg-[rgb(45,212,191)]"
     >
       <p class="text-xs leading-6 text-white md:text-sm dark:text-black">
         <NuxtLink to="/contact" @click="dismiss">
