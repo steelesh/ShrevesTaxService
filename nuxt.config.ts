@@ -61,7 +61,6 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en-US' },
       viewport: 'width=device-width, initial-scale=1.0, maximum-scale=5.0',
       meta: [
-        { name: 'robots', content: 'noindex, nofollow' },
         { name: 'msapplication-TileColor', content: '#ffffff' },
         {
           name: 'msapplication-config',
