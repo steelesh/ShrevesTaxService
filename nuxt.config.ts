@@ -15,10 +15,10 @@ export default defineNuxtConfig({
     '@nuxtjs/seo'
   ],
   site: {
-    url: 'https://example.com',
-    name: 'Awesome Site',
-    description: 'Welcome to my awesome site!',
-    defaultLocale: 'en' // not needed if you have @nuxtjs/i18n installed
+    url: 'https://shrevestaxservice.com',
+    name: "Shreve's Tax Service",
+    description:
+      "Shreve's Tax Service is a family-owned tax preparation and financial planning office in Zanesville, Ohio that specializes in providing personalized and expert tax services."
   },
   routeRules: {
     '/api/sendEmail': {
