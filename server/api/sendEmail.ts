@@ -20,7 +20,6 @@ export default defineEventHandler(async (event) => {
 
     const transporter = nodemailer.createTransport({
       host: config.smtpHost,
-      port: parseInt(config.smtpPort, 10),
       secure: true,
       auth: {
         user: config.smtpUser,
@@ -29,7 +28,7 @@ export default defineEventHandler(async (event) => {
     });
 
     const mailOptions = {
-      from: 'Contact form',
+      from: 'wendy@shrevestaxservice.com',
       to: 'wendy@shrevestaxservice.com',
       subject: result.subject,
       text: `Message from ${result.firstName} ${result.lastName}: ${result.message}`
