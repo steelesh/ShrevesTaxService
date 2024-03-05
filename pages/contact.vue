@@ -4,8 +4,15 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: "Shreve's Tax Service Contact Information"
-    }
+      content:
+        "Contact Shreve's Tax Service in Zanesville, OH for professional tax preparation and consulting services. Maximize your returns with expert advice."
+    },
+    {
+      name: 'keywords',
+      content:
+        'professional tax services, tax service, tax preparation, IRS, E-File Provider, Zanesville, Wendy Shreve, tax preparation Zanesville, tax planning, tax compliance, individual tax services, business tax services, tax expert, maximize tax savings, tax consultant, IRS regulations, E-File services'
+    },
+    { name: 'author', content: "Shreve's Tax Service" }
   ]
 });
 const links = [
