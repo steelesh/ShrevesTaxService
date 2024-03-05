@@ -42,7 +42,7 @@ export default defineNuxtConfig({
     icons: ['heroicons', 'simple-icons']
   },
   colorMode: {
-    preference: 'dark'
+    preference: 'light'
   },
   devtools: {
     enabled: true
