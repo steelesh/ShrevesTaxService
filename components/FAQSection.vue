@@ -8,12 +8,12 @@ const items = [
   {
     label: 'How long does the tax preparation process take?',
     content:
-      'It varies depending on your financial situation. After our initial consultation, we will provide you with an estimated timeline.'
+      'It depends on your financial situation. After our initial consultation, we will provide you with an estimated timeline.'
   },
   {
     label: 'Can you help with tax filings from previous years?',
     content:
-      'Yes, we can assist with filing back taxes and will work with you to gather necessary documentation and submit past year returns.'
+      'Yes, we can help with filing back taxes and will work with you to gather the necessary documentation and submit past year returns.'
   }
 ];
 </script>
