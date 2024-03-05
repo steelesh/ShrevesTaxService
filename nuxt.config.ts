@@ -46,6 +46,11 @@ export default defineNuxtConfig({
     smtpUser: process.env.SMTP_USER,
     smtpPass: process.env.SMTP_PASS
   },
+  devServer: {
+    https: true,
+    port: 3000,
+    host: 'localhost'
+  },
   ui: {
     icons: ['heroicons', 'simple-icons']
   },
