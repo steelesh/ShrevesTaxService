@@ -1,9 +1,6 @@
 <script setup>
-import { useRouter } from 'vue-router';
-const { isHeaderDialogOpen } = useUIState();
-const router = useRouter();
-
 const colorMode = useColorMode();
+
 const isLight = computed({
   get() {
     return colorMode.value === 'light';
@@ -12,11 +9,6 @@ const isLight = computed({
     colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
   }
 });
-
-function navigateTo(to) {
-  isHeaderDialogOpen.value = false;
-  router.push(to);
-}
 
 const links = [
   {
@@ -40,10 +32,7 @@ const links = [
     }"
   >
     <template #left>
-      <NuxtLink
-        @click="navigateTo('/')"
-        class="hidden cursor-pointer items-center gap-2 md:flex"
-      >
+      <NuxtLink to="/" class="hidden cursor-pointer items-center gap-2 md:flex">
         <NuxtImg
           class="h-12"
           src="/images/logo/misc/png/plant-group-no-bottom.png"
@@ -51,7 +40,7 @@ const links = [
         />
         <span class="font-bold">Shreve's Tax Service</span>
       </NuxtLink>
-      <NuxtLink @click="navigateTo('/')" class="block cursor-pointer md:hidden">
+      <NuxtLink to="/" class="block cursor-pointer md:hidden">
         <NuxtImg
           class="h-14"
           :src="
