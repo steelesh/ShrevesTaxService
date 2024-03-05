@@ -16,6 +16,7 @@
   "dependencies": {
     "@iconify-json/heroicons": "^1.1.19",
     "@iconify-json/simple-icons": "^1.1.90",
+    "@nuxt-modules/compression": "^0.1.0",
     "@nuxt/ui-pro": "^0.7.5",
     "@types/nodemailer": "^6.4.14",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
