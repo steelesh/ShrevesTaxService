@@ -62,7 +62,7 @@ const links = [
           Wendy holds a Bachelor of Arts in Business Economics from Muskingum
           College (1997). In addition to her role at Shreve's Tax Service, she
           serves as the Fiscal Officer of Springfield Township and teaches 2nd
-          grade at Maysville High School.
+          grade at Maysville Elementary School.
         </p>
       </div>
 
