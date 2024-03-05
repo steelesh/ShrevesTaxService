@@ -17,10 +17,8 @@
       <br />
       <br />
       <span
-        >To read more about our services,
-        <NuxtLink class="text-primary" to="/services"
-          >click here</NuxtLink
-        ></span
+        >Read more about each of our
+        <NuxtLink class="text-primary" to="/services">services</NuxtLink></span
       >
     </template>
     <ULandingGrid>
