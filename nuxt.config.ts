@@ -20,6 +20,14 @@ export default defineNuxtConfig({
     description:
       "Shreve's Tax Service is a family-owned tax preparation and financial planning office in Zanesville, Ohio that specializes in providing personalized and expert tax services."
   },
+  buildModules: [
+    [
+      '@nuxt-modules/compression',
+      {
+        algorithm: 'brotliCompress'
+      }
+    ]
+  ],
   routeRules: {
     '/api/sendEmail': {
       security: {
