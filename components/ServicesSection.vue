@@ -20,7 +20,7 @@
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
           aria-label="Learn more about our tax preparation service"
-          >Learn More</UButton
+          >Read More</UButton
         ></ULandingCard
       >
       <ULandingCard
@@ -34,7 +34,7 @@
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
           aria-label="Learn more about our tax planning service"
-          >Learn More</UButton
+          >Read More</UButton
         ></ULandingCard
       >
       <ULandingCard
@@ -48,7 +48,7 @@
           :trailing="true"
           icon="i-heroicons-arrow-long-right"
           aria-label="Learn more about our tax compliance service"
-          >Learn More</UButton
+          >Read More</UButton
         ></ULandingCard
       >
     </ULandingGrid>
