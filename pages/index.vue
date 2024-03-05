@@ -11,8 +11,7 @@ useHead({
       name: 'keywords',
       content:
         'professional tax services, tax service, tax preparation, IRS, E-File Provider, Zanesville, Wendy Shreve, tax preparation Zanesville, tax planning, tax compliance, individual tax services, business tax services, tax expert, maximize tax savings, tax consultant, IRS regulations, E-File services'
-    },
-    { name: 'author', content: "Shreve's Tax Service" }
+    }
   ]
 });
 definePageMeta({

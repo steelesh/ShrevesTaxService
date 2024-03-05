@@ -110,10 +110,6 @@ export default defineNuxtConfig({
           name: 'keywords',
           content:
             'tax service, tax preparation, IRS, E-File Provider, Zanesville, Wendy Shreve'
-        },
-        {
-          name: 'author',
-          content: "Shreve's Tax Service"
         }
       ],
       link: [
