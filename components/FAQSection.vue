@@ -20,8 +20,8 @@ const items = [
 
 <template>
   <ULandingSection
-    headline="Faq"
-    description="Have a question? We have answers. If you can't find what you're looking for, please don't hesitate to contact us."
+    headline="FAQ"
+    description="Have a question? We have answers. If you can't find what you're looking for, don't hesitate to contact us."
     id="faq"
     class="section"
     v-motion-fade
