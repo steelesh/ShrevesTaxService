@@ -23,5 +23,3 @@ Ensuring compliance with the ever-changing tax laws and regulations is crucial f
 - **Up-to-Date Expertise**: We stay updated on the latest federal, state, and local tax laws and regulations. This knowledge allows us to ensure that your tax returns are fully compliant, reducing the risk of audits and penalties.
 
 - **Tax Return Review and Preparation**: As we review and prepare your tax returns, we ensure high accuracy and compliance. Our thorough understanding of tax law means we can identify potential red flags before they become issues.
-
-- **Compliance for Businesses**: For our small business clients, we offer comprehensive services to ensure compliance across all tax-related matters, including payroll tax, sales tax, and other business-related taxes. We help you understand your obligations and ensure your business meets all tax filing requirements.
