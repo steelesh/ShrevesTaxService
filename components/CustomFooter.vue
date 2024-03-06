@@ -27,7 +27,7 @@ const navigation = {
   resources: [
     { name: 'Testimonials', href: '/#testimonials' },
     { name: 'FAQ', href: '/#faq' },
-    { name: 'Site Map', href: '/sitemap' }
+    { name: 'Site Map', href: '/sitemap.xml' }
   ],
   social: [
     {
