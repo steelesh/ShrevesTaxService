@@ -36,7 +36,7 @@ const links = [
       description="Get to know us and our background at Shreve's Tax Service."
     />
     <UPageBody
-      class="flex flex-col justify-between gap-10 lg:flex-row lg:gap-0"
+      class="flex flex-col-reverse justify-between gap-10 lg:flex-row lg:gap-0"
     >
       <div class="flex flex-col gap-[20px] lg:w-[45%]">
         <h2
