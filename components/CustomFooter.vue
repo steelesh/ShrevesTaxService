@@ -26,8 +26,7 @@ const navigation = {
   ],
   resources: [
     { name: 'Testimonials', href: '/#testimonials' },
-    { name: 'FAQ', href: '/#faq' },
-    { name: 'Site Map', href: '/sitemap.xml' }
+    { name: 'FAQ', href: '/#faq' }
   ],
   social: [
     {
@@ -109,6 +108,9 @@ const navigation = {
                     item.name
                   }}</NuxtLink>
                 </li>
+                <li>
+                  <a class="text-sm leading-6" href="/sitemap.xml">Site Map</a>
+                </li>
               </ul>
             </div>
             <div class="mt-10 md:mt-0">
@@ -170,3 +172,13 @@ const navigation = {
     </div>
   </footer>
 </template>
+
+<style scoped>
+li > a {
+  @apply opacity-75;
+}
+
+li > a:hover {
+  @apply border-b opacity-100 transition duration-200;
+}
+</style>
